@@ -1,3 +1,7 @@
 # PacmanCTF
 Custom reflex agent for Pacman CTF game created at UC Berkeley. Code was used in CS 4365 Artificial Intelligence at UT Dallas. 
 See contest.html in the zip and https://courses.cs.washington.edu/courses/cse573/17wi/pacman/contest/contest.html for more information about how the game works
+
+To run the game, download and unzip the zip folder. Download theSneakySneks.py and place it in the unzipped folder. To run the game, two teams must be specified. The unzipped folder will now have two teams in it: baselineTeam.py and theSneakySneks.py. To run a game with these two teams against eachother, run "python capture.py -r baselineTeam -b theSneakySneks" . This will run a game with baselineTeam as the red team and my team theSneakySneks as the blue team. However, this command will always run the game on the same map. Run the game with a random map, run "python capture.py -r baselineTeam -b theSneakySneks -l RANDOM". You can generate random layouts by specifying RANDOM[seed]. For example, -l RANDOM13 will use a map randomly generated with seed 13.
+
+If you want to run multiple games with a single command, you can run the command with -n [number of games you want to run] . For example, "python capture.py -r baselineTeam -b theSneakySneks -l RANDOM -n 20" will run 20 games with random layouts. If you want to run the games without the graphics and just see the number of games that each team wins, you can run the command with -q . 
